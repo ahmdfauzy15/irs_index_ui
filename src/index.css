@@ -1,0 +1,59 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  body {
+    @apply antialiased text-gray-900 overflow-x-hidden;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+
+  ::selection {
+    @apply bg-red-500/30 text-red-900;
+  }
+}
+
+@layer utilities {
+  .animate-gradient {
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent;
+  }
+
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+
+  .shadow-glow-red {
+    box-shadow: 0 0 40px rgba(220, 38, 38, 0.3);
+  }
+
+  .shadow-glow-red:hover {
+    box-shadow: 0 0 60px rgba(220, 38, 38, 0.5);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-red-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-red-400 to-red-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply from-red-500 to-red-700;
+}
