@@ -53,7 +53,23 @@ const LoginButtons = () => {
         { icon: Users, text: 'Update Recent' }
       ],
       credentials: 'Akun LJK Terdaftar'
-    }
+    },
+    {
+      id: 'pengawas',
+      title: 'User Baru',
+      subtitle: 'IRS Dashboard User Baru',
+      icon: Shield,
+      description: 'New User System',
+      color: 'from-red-600 to-red-700',
+      buttonText: 'MASUK SEBAGAI USER BARU',
+      link: 'https://irs-ui-awal.vercel.app/',
+      accessLevel: 'Akses',
+      features: [
+        { icon: Eye, text: 'Dashboard Pengajuan Baru Real-time' },
+      
+      ],
+      credentials: 'Kredensial Internal OJK'
+    },
   ];
 
   return (
