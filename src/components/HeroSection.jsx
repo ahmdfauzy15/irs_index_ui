@@ -38,7 +38,6 @@ const HeroSection = () => {
       <div className="flex flex-wrap justify-center gap-4 max-w-2xl mx-auto mb-12">
         {[
           { icon: Lock, text: 'Sistem SSO', color: 'bg-green-100 text-green-800' },
-          { icon: Cpu, text: 'Real-time Processing', color: 'bg-blue-100 text-blue-800' },
           { icon: Shield, text: 'Informasi Lengkap', color: 'bg-red-100 text-red-800' },
         ].map((feature, index) => (
           <div
